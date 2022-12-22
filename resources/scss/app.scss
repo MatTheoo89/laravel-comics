@@ -13,6 +13,7 @@
 body{
     font-family: 'Roboto', sans-serif;
     background-color: #131313;
+    color:white;
 }
 
 .container{
@@ -71,6 +72,108 @@ header{
                             border-radius: 5px;
                     }
                 }
+            }
+        }
+    }
+}
+
+
+// ! JUMBO
+
+.jumbotron{
+    background-color: red;
+    height: 500px;
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+    img{
+        width: 100%;
+    }
+}
+
+button{
+    border: none;
+    outline: none;
+    background-color: $blue-color;
+    padding: 10px 25px;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    &.top{
+        letter-spacing: 1px;
+        transform: translateY(-170%);
+    }
+}
+
+.card-area{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.container{
+    color: #fff;
+    padding: 50px 0;
+}
+
+.button{
+text-align: center;
+margin-bottom: 50px;
+button{
+    padding: 10px 60px;
+    font-size: .9rem;
+
+}
+}
+
+.card{
+    width: calc(100% / 6);
+    padding: 20px 10px;
+    .card-image{
+        overflow: hidden;
+        margin-bottom: 10px;
+        text-align: center;
+        img{
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            object-position: top;
+    }
+}
+span{
+    text-align: left;
+    text-transform: uppercase;
+    font-size: .8rem;
+    padding-left: 4px;
+}
+}
+
+
+//! COMPONENTE BLU
+
+.main-bottom{
+    height: 150px;
+    background-color: $blue-color;
+    .container{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 100%;
+        .card{
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            img{
+                width: 50px;
+                margin-right: 20px;
+            }
+            h3{
+                color: #fff;
+                text-transform: uppercase;
+                font-weight: 400;
+                font-size: .9rem;
             }
         }
     }

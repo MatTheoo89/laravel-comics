@@ -9,7 +9,7 @@
 @section('content')
 
     <main>
-        MAIN Characters
+        <h1>MAIN Characters</h1>
     </main>
 
 @endsection

@@ -9,7 +9,8 @@
 @section('content')
 
     <main>
-        MAIN Collectibles
+        <h1>MAIN Collectibles</h1>
+        
     </main>
 
 @endsection

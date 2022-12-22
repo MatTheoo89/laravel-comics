@@ -9,7 +9,8 @@
 @section('content')
 
     <main>
-        MAIN Games
+        <h1>MAIN Games</h1>
+        
     </main>
 
 @endsection

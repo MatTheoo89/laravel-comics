@@ -9,7 +9,8 @@
 @section('content')
 
     <main>
-        MAIN Fans
+        <h1>MAIN Fans</h1>
+        
     </main>
 
 @endsection

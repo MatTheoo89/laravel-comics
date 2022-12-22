@@ -9,7 +9,7 @@
 @section('content')
 
     <main>
-        MAIN Shop
+        <h1>MAIN Shop</h1>
     </main>
 
 @endsection
