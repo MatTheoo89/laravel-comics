@@ -25,7 +25,7 @@ body{
 
 header{
     background-color: #fff;
-    height: 175px;
+    height: 150px;
 
     .header-top{
         background-color: $blue-color;
@@ -50,8 +50,7 @@ header{
     
     
     .container{
-        height: 100%;
-        // padding: 20px 0;
+        height: calc(100% - 30px);
         display: flex;
         align-items: center;
         justify-content: space-between;

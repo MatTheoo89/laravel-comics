@@ -9,8 +9,6 @@
     
     <div class="container">
         
-
-
         <div class="logo">
 
             <a href="{{ route('home') }}">
