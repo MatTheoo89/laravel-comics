@@ -15,9 +15,9 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
 
-    $comics = config('comics');
+    $comicsList = config('db.comics');
 
-    return view('home', compact('comics'));
+    return view('home', compact('comicsList'));
 })->name('home');
 
 Route::get('/characters', function () {
@@ -59,3 +59,13 @@ Route::get('/news', function () {
 Route::get('/shop', function () {
     return view('shop');
 })->name('shop');
+
+Route::get('/comic_details/{id}', function ($id) {
+
+    $comics = config('db.comics');
+    $comic_get = array_filter($comics, fn ($item) => $item['id'] == $id);
+    $comic = $comic_get[array_key_first($comic_get)];
+
+    return view('comic_details', compact('comic'));
+
+})->name('comic_details');

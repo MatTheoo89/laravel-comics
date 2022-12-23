@@ -14,9 +14,9 @@
             <div class="card-area">
 
                 <!--CARD-->
-                @foreach ($comics as $comic )
+                @foreach ($comicsList as $comic )
 
-                <div class="card">
+                <a href="{{ route('comic_details', ['id' => $comic['id']]) }}" class="card">
 
                         <div class="card-image">
                 
@@ -30,7 +30,7 @@
                 
                         </div>
                 
-                    </div>
+                    </a>
                     
                 @endforeach
 

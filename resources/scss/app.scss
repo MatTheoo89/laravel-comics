@@ -300,3 +300,32 @@ footer{
         
     }
 }
+
+
+//! DETAILS
+
+.details{ 
+    position: relative;
+    .spacer{
+    height: 60px;
+    width: 100%;
+    background-color: $blue-color;
+    }
+    .img-details{
+        position: absolute;
+        border: 2px solid white;
+        top: 27%;
+    }
+    .wrapper{
+        background-color: aquamarine;
+        height: 400px;
+        display: flex;
+        .left{
+            width: 70%;
+        }
+        .right{
+            width: 30%;
+            text-transform: uppercase;
+        }
+    }
+}
