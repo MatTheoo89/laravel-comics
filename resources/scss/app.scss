@@ -311,21 +311,99 @@ footer{
     width: 100%;
     background-color: $blue-color;
     }
-    .img-details{
+    .poster{
+        .img-details{
         position: absolute;
         border: 2px solid white;
-        top: 27%;
+        top: 22%;
+        }
+    .genre{
+        background-color: $blue-color;
+        position: absolute;
+        z-index: 1;
+        top: 22%;
+        padding: 5px;
+        border-top: 2px solid white;
+        border-left: 2px solid white;
+    }
+    .gallery{
+        width: 196px;
+        background-color: $blue-color;
+        position: absolute;
+        z-index: 1;
+        top: 42%;
+        padding: 5px;
+        border-bottom: 2px solid white;
+        border-left: 2px solid white;
+        border-right: 2px solid white;
+        text-align: center;
+    }
+    
     }
     .wrapper{
-        background-color: aquamarine;
         height: 400px;
         display: flex;
         .left{
             width: 70%;
+            margin-top: 60px;
+            h1{
+                margin-bottom: 20px;
+            }
+            .price-avaible{
+                background-color: green;
+                height: 50px;
+                display: flex;
+                align-items: center;
+                margin-bottom: 20px;
+                .price{
+                    padding: 0 10px;
+                    width: 70%;
+                    display: flex;
+                    justify-content: space-between;
+                }
+                .avaible{
+                    display: flex;
+                    align-items: center;
+                    width: 30%;
+                    text-align: center;
+                    &::before{
+                        display: inline-block;
+                        content: '';
+                        width: 1px;
+                        height: 50px;
+                        background-color: #131313;
+                        margin-right: 5px;
+                    }
+                }
+            }
         }
         .right{
             width: 30%;
             text-transform: uppercase;
         }
     }
+
+
+.detail{
+    background-color: #cccccc;
+    color: darken($blue-color, 30%);
+    padding: 50px 0;
+    .container-detail{
+        width: 65%;
+        margin: 0 auto;
+        display: flex;
+        .col-l, .col-r{
+            width: 50%;
+            div[class^="box-"]{
+                border-top: 1px solid rgb(156, 156, 156);
+                border-bottom: 1px solid rgb(156, 156, 156);
+                margin: 10px 10px 10px 0;
+                padding: 10px 0;
+                h4{
+                display: inline;
+            }
+        }
+    }
+    }
+}
 }
